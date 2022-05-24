@@ -1,13 +1,12 @@
 package c69_mandelbrotset;
 import java.awt.*;
-import java.util.Random;
 import javax.swing.*;
 
-public class PlotPanel extends JPanel {
+public class MandelbrotPanel extends JPanel {
 
     private final int MAX_ITERATIONS = 80;
 
-    public PlotPanel() {
+    public MandelbrotPanel() {
         this.setSize(800,800);
     }
 
@@ -40,7 +39,7 @@ public class PlotPanel extends JPanel {
         JFrame frame = new JFrame("Mandelbrot set");
         frame.setSize(800, 800);
         frame.setPreferredSize(new Dimension(800, 800));
-        frame.add(new PlotPanel());
+        frame.add(new MandelbrotPanel());
         frame.pack();
         frame.setVisible(true);
 //        frame.setResizable(false);
